@@ -5,8 +5,9 @@ Pod::Spec.new do |spec|
   spec.homepage       = 'https://github.com/galandezzz/Palette'
   spec.license        = 'MIT'
   spec.author         = { 'Egor Snitsar' => 'fearum@icloud.com' }
-  spec.platform       = :ios, '9.0'
+  spec.ios.deployment_target = '10.0'
+  spec.osx.deployment_target = '10.12'
   spec.swift_version  = '5.0'
-  spec.source         = { :git => 'https://github.com/galandezzz/Palette.git', :tag => "v#{spec.version}" }
+  spec.source         = { :git => 'https://github.com/galandezzz/Palette', :tag => "v#{spec.version}" }
   spec.source_files   = 'Source/*', 'Source/*/*'
 end
